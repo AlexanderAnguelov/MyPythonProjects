@@ -3,7 +3,7 @@
 ## What is this game:
 
 Mastermind/Bulls and Cows.
-The computer randomly picks a 4-digit number. The human player tries to guess the number according to the - [game rules](https://en.wikipedia.org/wiki/Mastermind_(board_game)). 
+The computer randomly picks a 4-digit number. The human player tries to guess the number according to the [game rules](https://en.wikipedia.org/wiki/Mastermind_(board_game)). 
 
 ### How to play the game:
 
