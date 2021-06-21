@@ -30,17 +30,15 @@ def compare(num1, num2):
     return bulls, cows
 
 
-
-SECRET_CODE = "0008"
+SECRET_CODE = str(random.randint(0, 9999))
+while len(SECRET_CODE) != 4:
+    SECRET_CODE = "0" + SECRET_CODE
 while True:
     USER_CODE = input("Enter 4 digit code guess:\n")
     if re.match("^[0-9]{4}$", USER_CODE):
-        pass
+        print("You guessed (Bulls, Cows) - ", compare(USER_CODE, SECRET_CODE))
     else:
         print("Wrong code!")
-        USER_CODE = input("Enter 4 digit code guess:\n")
     if SECRET_CODE == USER_CODE:
         print("You guessed the code!")
         break
-    else:
-        print("You guessed (Bulls, Cows) - ", compare(USER_CODE, SECRET_CODE))
